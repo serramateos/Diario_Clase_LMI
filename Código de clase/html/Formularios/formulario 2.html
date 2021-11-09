@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios 2</title>
+</head>
+
+<body>
+    <form>
+        <!--placeholder: sirve para introducir datos de entrada-->
+        <!--required: campo obligatorio-->
+        <!--value: solo para añadir puntos de seleccion-->
+        <!--target="_blank": cambia la pestaña-->
+        <!--target="_selft": misma pestaña que estamos trabajando-->
+
+        <fieldset>
+            <legend>Opciones</legend>
+            <input type="radio" name="EOpciones" value="Opciones">
+            <label>Wifi</label>
+            <input type="radio" name="EOpciones" value="Wifi">
+            <label>Cable</label>
+            <input type="radio" name="EOpciones" value="Cable">
+            <label>Fibra</label>
+            <input type="radio" name="EOpciones" value="Fibra"><br>
+            <label>Elija una hora: </label>
+            <input type="time" name="EHora"><br>
+            <label>Elija un fichero: </label>
+            <input type="file" name="EArchivo"><br>
+            <select name="ETipo">
+                <option value="Ciencias">Ciencias</option>
+                <option value="Letras">Letras</option>
+            </select><br>
+            <textarea name="EReseña" placeholder="Escriba aquí, por favor" rows="7" cols="10"></textarea><br>
+            <label>Elija una fecha: </label>
+            <input type="date" name="EFecha"><br>
+            <input type="checkbox" name="EOpciones" value="Fecha">
+            <label>USB</label>
+            <input type="checkbox" name="EOpciones" value="Usb">
+            <label>Paralelo</label>
+            <input type="checkbox" name="EOpciones" value="Paralelo">
+            <label>Ps2</label><br>
+            <label>Instituto: </label>
+            <input type="text" name="EInstituto" required>
+            <label>Estudios elegidos: </label>
+            <input type="text" name="EEstudios" required>
+            <label>Nombre: </label>
+            <input type="text" name="ENombre" required>
+            <label>Apellidos: </label>
+            <input type="text" name="EApellidos" required>
+            <label>Email: </label>
+            <input type="text" name="EEmail" required><br>
+            <label>Elija un color: </label>
+            <input type="color" name="EColor1" required>
+        </fieldset>
+        <fieldset>
+            <legend>Por favor, complete estas opciones</legend>
+            <label>Elija un color: </label>
+            <input type="color" name="EColor2" required><br>
+            <input type="radio" name="EOpciones2" value="Intel">
+            <label>Intel</label><br>
+            <input type="radio" name="EOpciones2" value="AMD">
+            <label>AMD</label><br>
+            <label>Elija una hora: </label>
+            <input type="time" name="EHora2"><br>
+            <label>Elija un fichero: </label>
+            <input type="file" name="EArchivo2"><br>
+            <select name="EIdiomas" size="4">
+                <option value="Inglés">Inglés</option>
+                <option value="Alemán">Alemán</option>
+                <option value="Francés">Francés</option>
+            </select><br>
+            <label>Nombre: </label>
+            <input type="text" name="ENombre2" required>
+            <label>Apellidos: </label>
+            <input type="text" name="EApellido2" required>
+            <label>Email: </label>
+            <input type="text" name="EEmail2" required>
+            <label>Telefono: </label>
+            <input type="text" name="ETelefono" required><br>
+            <input type="checkbox" name="EOpciones3" value="Albacete">
+            <label>Albacete</label>
+            <input type="checkbox" name="EOpciones3" value="Ciudad Real">
+            <label>Ciudad Real</label>
+            <input type="checkbox" name="EOpciones3" value="Cuenca">
+            <label>Cuenca</label>
+            <input type="checkbox" name="EOpciones3" value="Guadalajara">
+            <label>Guadalajara</label>
+            <input type="checkbox" name="EOpciones3" value="Toledo">
+            <label>Toledo</label><br>
+            <label>Elija una fecha: </label>
+            <input type="date" name="EFecha2"><br>
+            <textarea name="EReseña2" placeholder="Utilice este cuadro para escribir" rows="7" cols="10"></textarea><br>
+
+        </fieldset>
+        <input type="reset">
+        <input type="submit" value="Enviar tu opinión"><br>
+        <br>
+        <a href="../../index.html">index</a>
+</body>
+
+</html>

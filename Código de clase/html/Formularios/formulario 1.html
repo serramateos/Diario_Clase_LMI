@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--con charset="UTF-8" tenemos resuelto el problema de las tildes-->
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <!--placeholder: sirve para introducir datos de entrada-->
+        <!--required: campo obligatorio-->
+        <!--value: solo para añadir puntos de seleccion-->
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre: </label>
+            <input type="text" name="ENombre" placeholder="Escriba aqui..." required>
+            <label>1er Apellido: </label>
+            <input type="text" name="E1Apellidos" placeholder="Escriba aqui..." required>
+            <label>2do Apellido: </label>
+            <input type="text" name="E2Apellidos" placeholder="Escriba aqui..." required>
+            <label>DNI: </label>
+            <input type="text" name="E2Apellidos" placeholder="Escriba aqui..." required>
+            <label>Letra DNI: </label>
+            <input type="text" maxlength="1" name="EDNILetra" placeholder="Letra..." size="1">
+            <label>Fecha de Nacimiento: </label>
+            <input type="date" name="ENacimiento"><br>
+            <label>Género:</label><br>
+            <input type="radio" name="EGenero" value="Masculino">
+            <label>Masculino</label>
+            <input type="radio" name="EGenero" value="Femenino">
+            <label>Femenino</label>
+        </fieldset><br>
+        <fieldset>
+            <legend>Datos Académicos</legend>
+            <!--selected: campo marcado-->
+            <select name="ETipo">
+                <option value="5">Básico 5€</option>
+                <option value="10">Plus 10€</option>
+                <option value="3000" selected>Hazte PRO 3000€</option>
+            </select>
+            <input type="file" name="EArchivo">
+            <textarea name="EReseña" placeholder="Texto..." rows="5" cols="6"></textarea>
+        </fieldset><br>
+        <input type="reset">
+        <input type="submit">
+    </form><br>
+    <a href="../../index.html">index</a>
+</body>
+</html>
